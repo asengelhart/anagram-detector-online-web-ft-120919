@@ -3,5 +3,9 @@ class Anagram
   
   def initialize(word_arg)
     @word = word_arg
-  end 
+  end
+  
+  def match(array)
+    array.collect do |test_word|
+      word.split("").sort == test_word
 end 
